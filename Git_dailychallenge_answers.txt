@@ -2,7 +2,7 @@
 
 2.git checkout -b calculator
 
-3.git branch-show
+3.git branch -a
 
 4.git merge closenose
 
