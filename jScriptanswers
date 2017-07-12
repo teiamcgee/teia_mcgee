@@ -1,0 +1,23 @@
+1.for(var x = 1;x <= 10 ; x++) {
+  console.log(x)
+} 
+
+2.var firstname ="Teia";
+var lastname="McGee";
+console.log ("Welcome my name is " + firstname + ' ' + lastname);
+
+3. var yourname='TeiaMcGee';
+
+for (var x=1; x <=4; x++) {
+  console.log(yourname);
+}
+
+4.var food =['chicken', 'fries', 'bacon', 'donuts']
+
+for (var x=0; x<=3; x++){
+  console.log(food[x])
+}
+
+5.for (var i = 10; i> 0; i--) {
+  console.log(i);
+}
