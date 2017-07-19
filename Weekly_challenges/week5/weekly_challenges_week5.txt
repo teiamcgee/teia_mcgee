@@ -1,0 +1,89 @@
+
+Weekly challenges
+// EASY: Write a function that takes in two separate parameters and console log a sentence with
+ both parameters concatenated together into one string.
+function add(num1,num2) {
+  console.log(num1 + "+" + num2);
+}
+add(1,2);
+
+2.// EASY: Write a function that accepts three separate colors and returns an array.  Console log the
+ result of the function
+
+function colors(colorA,colorB,colorC){
+   
+  var colorArray=[];
+  
+  colorArray.push(colorA);
+  
+  colorArray.push(colorB);
+   
+  colorArray.push(colorC);
+  
+  console.log(colorArray);
+  return colorArray;
+
+  
+}
+
+3.// EASY: Use the function created in the array challenge and loop through the array to console log
+ each color individually.
+
+var colorAnswers= colors("red","blue","green");
+console.log(colorAnswers)
+for (i=0; i<3; i++){
+  console.log(colorAnswers[i]);
+}
+
+4// MEDIUM: Using the function you created to make an array from the previous challenge, make
+ another array of objects that have an animal and a corresponding color in each object. Make
+ sure the first letter of the animal and the first letter of the color are the same.
+// Console log a sentence for each animal and its color. EX. “The giraffe is green”.
+. 
+var animalColorArray = [
+  {animal : "rooster"
+    Color :" red "   
+  },
+  {animal: “blowfish"
+    color : "blue"
+  },
+
+]
+
+
+ console.log("The " + animalColorArray[0].animal + " is " + animalColorArray[0].color );
+console.log(“The” + animalColorArray[1].animal + “is’ + animalColorArray[1].color);
+
+
+5.// HARD:
+// In this challenge, you will use the same functionality from the medium challenge. You will need
+ a total of 6 animals and 6 colors. Instead of having the animals and colors matching by first
+ letter, they will need to be completely random.
+// Create a string, similar to the medium challenge, and measure its length. Compare the length
+ of all the strings to find out which has the most number of characters. Console log this sentence
+ out with the number of characters it contains.
+// EX. "The string with the most characters is 'The RattleSnake is yellow' with 25”.
+var animalColor = ["red", "blue", "orange", "pink","gray","violet"];
+var animalArray = ["dog", "seal", "dolphin", "groundhog", "cat", "mouse"];
+  
+var combinations=[];
+var champion = '';
+
+for ( i =0; i<6; i++){
+  Math.floor(Math.random() * 6);
+  combinations.push("The " + animalArray[randomNumbers()] + " is " + animalColor[randomNumbers()]);
+ 
+}
+
+for(i=0; i<combinations.length; i++) {
+  
+  if (combinations[i].length > champion.length) {
+    champion = combinations[i];
+  }
+}
+console.log("The sentence with the most characters is " + champion + " with " + champion.length);
+
+function randomNumbers(){
+ var  randomNumber=Math.floor(Math.random() * 6);
+  return randomNumber;
+};
