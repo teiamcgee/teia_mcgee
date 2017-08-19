@@ -1,0 +1,2 @@
+I would like to go over while loops, and do while loops.
+More pseudo coding, have a hard time understanding how to create a answer to a problem
